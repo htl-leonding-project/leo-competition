@@ -1,0 +1,122 @@
+= Turnierverwaltung
+firstname lastname
+1.0.0, yyyy-mm-dd: Some notes
+ifndef::imagesdir[:imagesdir: images]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// https://fontawesome.com/v4.7.0/icons/
+icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
+icon:github-square[link=https://github.com/htl-leonding-college/asciidoctor-docker-template] ‏ ‏ ‎
+icon:home[link=https://htl-leonding.github.io/]
+endif::backend-html5[]
+
+// print the toc here (not at the default position)
+//toc::[]
+
+== Pflichtenheft "Was mache ich"
+
+
+=== Ausgangssituation
+Unser Projekt ist ein Turnierverwaltungsprogramm , dass das Verwalten von Turnieren vereinfachen soll da die Turnierplanung momentan noch händisch durchgeführt wird. Das Programm kann die verschiedene Arten von Turnieren (z.B. Einzelturnier, Mannschaftsturnier), sowie verschieden Arten von Spielsystemen (KO-System, Gruppen-System) verwalten und man kann zwischen den verschiedenen Sportarten wählen.
+
+Die HTL Leonding ist eine HTL im oö. Zentralraum mit ca. 1000 Schülern und den Fachabteilungen Medientechnik, Informatik, ....
+es gibt turnsal die planung und organisatio erfolgt schriftlich auf papier
+organistaion
+
+=== Istzustand
+Momentan gibt es kein Turnierverwaltungsprogramm das an unserer Schule verwendet wird. Alle Daten werden bisher noch über Papier schriftlich erfasst also es gibt keine automatische Datenerfassung.
+
+im turn unterricht an der htl leonding werden sämtliche turniere per hand verwaltet
+
+=== Problemstellung
+Wenn Turniere an unserer Schule stattfinden kann das sehr oft aufwendig sein, dar man das alles schriftlich durchführt.
+Aufgrund der vielen Teilnehmer oder Teams verliert man schnell den Überblick wenn das alles schriftlich gehalten wird.
+
+die organisation der turniere ist sehr aufwednig nicht nur die planng sondern der auswertung ist aufwendig und felherhaft
+es werden jährlich verschiedene turnier durchgeführt in versch sportarten zb... die anmeldung von teams/ teilbnehmer von turnieren aks auch die plannung des spielsystem, durchführung des turniers und die auswetugn der platziereung erfolgt schriftlich auf papier dokumenten dies ist sehr zeitintense und fehleranfällig zb übetragungsfehler un
+
+
+=== Aufgabenstellung
+Unsere Aufgabe besteht darin ein Programm zu entwickeln, dass das Verwalten von Turnieren einfacher gestaltet, da das Erfassen von Daten auf Papier sehr aufwendig ist und man schnell den Überblick verlieren kann.
+
+==== Funktionale Anforderungen
+- Das Programm muss den Spielplan basierend auf dem Spielsystem und der Sportart generieren
+- Das Programm muss die eingegeben Daten des Turniers auswerten
+- Das Programm kann ein neues Turnier starten
+- Das Programm überprüft ob man als LehrerIn oder SchülerIn angemeldet ist und hat dementsprechend verschiedene Funktionen
+
+
+==== Nichtfunktionale Anforderungen (NFA)
+- Unser Programm ist leicht verständlich und übersichtlich gehalten um Benutzerfreundlichkeit zu garantieren
+- Unser Programm soll zuverlässig die eingegebenen Daten verarbeiten und im Falle eines Systemabsturzes für die Wiederherstellung der betroffenen Daten sorgen
+- Unser Programm soll die Daten schnell genug verarbeiten um die Ergbenisse der Spiele nicht verzögert anzuzeigen
+
+=== Ziele
+Unser Ziel ist die Erstellung eines Programmes welches die Planung,
+Verwaltung und Durchführung diverser Turnierarten und Spielsystemen vereinfacht.
+
+
+=== Mengengerüst
+Derzeit befinden sich an unsere Schule rund xyz Klassen um die Turnierverwaltung in den teilnehmenden Klassen anwenden
+zu können muss unser Projekt in der Lage sein die Anzahl an Tunieren, Spielsystemen, Sportarten sowie auch Teams verwalten zu können.
+
+
+=== Rahmenbedingungen
+zB Vorgaben vom Auftraggeber
+
+
+=== Use-Case
+[plantuml]
+
+----
+left to right direction
+actor Sportlehrer
+
+
+rectangle {
+
+    (Spielplan erstellen) as (Use2)
+
+    Sportlehrer -- (Use2)
+    Sportlehrer -- (Tunierauswertung)
+    Sportlehrer -- (Tunier durchführen)
+
+
+    (Spielplan generieren) <. (Use2) : include
+}
+----
+
+
+== Entwurf "Wie mache ich es"
+=== Systemarchitektur
+Unser Programm ist eine Desktop-Application und läuft unabhängig vom Internet auf einem Computer.
+
+== Projekthandbuch "Organisatorische Rahmenbedingungen"
+
+=== GANTT-Diagramm
+
+mit User-Stories (definiert in YouTrack)
+
+[plantuml,gantt,png]
+----
+@startgantt
+[Spielplan erstellen] lasts 10 days
+[Spielplan generieren] lasts 10 days
+[Spielplan generieren] starts at [Spielplan erstellen]'s end
+[Tunier durchführen] lasts 14 days
+[Tunier durchführen] starts at [Spielplan generieren]'s end
+[Tunierauswertung] lasts 10 days
+[Tunierauswertung] starts at [Tunier durchführen]'s end
+@endgantt
+----
+
+* link:minutes-of-meeting.html[Protokollvorlage]
+* link:demo.html[Demo]
+

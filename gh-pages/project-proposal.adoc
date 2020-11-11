@@ -1,0 +1,90 @@
+= Turnierverwaltung
+
+== Projektantrag
+
+=== Projektbezeichnung
+Turnierverwaltung
+
+=== Problemstellung
+Wenn Turniere an unserer Schule stattfinden kann das sehr oft aufwendig sein, dar man das alles schriftlich durchführt.
+Aufgrund der vielen Teilnehmer oder Teams verliert man schnell den Überblick wenn das alles schriftlich gehalten wird.
+
+=== Aufgabenstellung
+Unsere Aufgabe besteht darin ein Programm zu entwickeln, dass Turniere verwaltet, dar man sehr schnell den
+Überblick verliert und mithilfe des Programms gibt es dem User
+einen ganzen Überblick auf die ganzen Teams, Teilnehmer, Spiele, Siege und Niederlagen.
+
+=== Programmergebnis
+Das Ergebnis des Programms soll schlussendlich Spiel relevante Informationen wie
+z.B Teilnehmer, Schiedsrichter, Teams, Siege und Niederlagen gut strukturiert dargestellt werden.
+
+==== Leistung
+
+
+==== Softwareprodukt
+
+
+=== Projekthauptaufgabe
+- Das Anzeigen des Punktestandes von jedem Team
+- Die Siege und Niederlagen  werden aufgelistet
+- Das Eintragen eines Teilnehmer und als ganzes Team
+- Man wählt zwischen den Sportarten
+- Man entscheidet sich für verschiedene Turniersysteme
+- Eine Übersicht auf alte Matches
+- Es gibt eine Rangliste die, die Teams auflistet nach gewonnen und verlorenen Matches
+
+
+=== Was kann das Softwareprodukt nicht?
+
+
+=== Projektziele
+Die Turniere sollten leichter verwaltet werden können.
+
+==== Eigenschaften
+- es sollte gut strukturiert sein
+- leicht bedienbar
+
+==== Nichtziele
+- Unübersichtlich
+- Unstrukturiert
+- Nicht jede Person sollte sich anmelden können sondern nur bestimmte User
+
+=== Projektphasen
+- teilnehmenden Mannschaften erstellen
+- Turniere und die dazugehörigen Eigenschaften(z.B. „wie viele Mannschaften pro Gruppe“, „welche Spiele hintereinander gespielt werden“,...)
+- Sportartenauswahl erstellen
+
+//idk
+=== Meilensteine
+- Backend(Server)
+- Test
+
+
+
+=== Projektstart
+8.Oktober 2020
+
+=== Projektende
+voraussichtlich 2022
+
+
+=== Projektressource
+|===
+|Materialen| Personal | Infrastruktur
+|Laptop| Projektleiterin (12MR)|Wlan
+|Entwicklungsumgebung| Teammitglied (20TS)|
+||Teammitglied (21TR)||
+|===
+
+=== Projektrisiken
+Ein Projektrisiko könnte sein, dass das Projekt aufgrund zeitlicher und inhaltlicher
+Probleme nicht vollständig abgeschlossen werden kann.
+
+
+=== Projektteam
+12MR, 20TS, 21TR
+
+
+
+
+
