@@ -28,9 +28,7 @@ Die HTL Leonding ist eine HTL im oberösterreichischen Zentralraum mit ungefähr
 Sowie auch an anderen Schule gibt es hier Turnsäle in denen Tuniere stattfinden bei diesen erfolgt die Organisation derzeit schriftlich auf Papier.
 
 === Istzustand
-Momentan gibt es kein Turnierverwaltungsprogramm das an unserer Schule verwendet wird. Alle Daten werden bisher noch über Papier schriftlich erfasst also es gibt keine automatische Datenerfassung.
-
-im turn unterricht an der htl leonding werden sämtliche turniere per hand verwaltet
+An unserer Schule gibt es 2 Turnsäle in denen immer wieder Turniere stattfinden. Sämtliche dieser Turniere werden auf Papier verfasst und abgewickelt.
 
 === Problemstellung
 Wenn Turniere an unserer Schule stattfinden ist die Organisation der Turniere des öfteren sehr Zeit aufwendig,
@@ -40,7 +38,7 @@ sowohl die Anwendung, Planung des Spielsystems, Durchführung des Turniers und d
 welches sehr zeitintensiv und fehleranfällig ist.(Übertragungsfehler...)
 
 === Aufgabenstellung
-Unsere Aufgabe besteht darin ein Programm zu entwickeln, dass das Verwalten von Turnieren einfacher gestaltet, da das Erfassen von Daten auf Papier sehr aufwendig ist und man schnell den Überblick verlieren kann.
+Unsere Aufgabe besteht darin ein Programm zu entwickeln, dass das Verwalten von Turnieren einfacher gestaltet, da das Erfassen von Daten auf Papier sehr aufwendig ist und leicht zu Fehlern führen kann.
 
 ==== Funktionale Anforderungen
 - Das Programm muss den Spielplan basierend auf dem Spielsystem und der Sportart generieren
@@ -113,6 +111,4 @@ mit User-Stories (definiert in YouTrack)
 @endgantt
 ----
 
-* link:minutes-of-meeting.html[Protokollvorlage]
-* link:demo.html[Demo]
 
