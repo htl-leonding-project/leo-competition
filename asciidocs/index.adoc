@@ -33,12 +33,11 @@ Momentan gibt es kein Turnierverwaltungsprogramm das an unserer Schule verwendet
 im turn unterricht an der htl leonding werden sämtliche turniere per hand verwaltet
 
 === Problemstellung
-Wenn Turniere an unserer Schule stattfinden kann das sehr oft aufwendig sein, dar man das alles schriftlich durchführt.
-Aufgrund der vielen Teilnehmer oder Teams verliert man schnell den Überblick wenn das alles schriftlich gehalten wird.
-
-die organisation der turniere ist sehr aufwednig nicht nur die planng sondern der auswertung ist aufwendig und felherhaft
-es werden jährlich verschiedene turnier durchgeführt in versch sportarten zb... die anmeldung von teams/ teilbnehmer von turnieren aks auch die plannung des spielsystem, durchführung des turniers und die auswetugn der platziereung erfolgt schriftlich auf papier dokumenten dies ist sehr zeitintense und fehleranfällig zb übetragungsfehler un
-
+Wenn Turniere an unserer Schule stattfinden ist die Organisation der Turniere des öfteren sehr Zeit aufwendig,
+nicht nur die Planung sondern auch die Auswertung erfordert sehr viel Aufwand und ist meist nicht ganz fehlerfrei.
+Es werden jährlich veschiedenste Turniere durchgeführt in diversen Sportarten wie zum Beispiel Fußball, Beachvollyball, Basketball usw.
+sowohl die Anwendung, Planung des Spielsystems, Durchführung des Turniers und die Auswertung der Plazierungen erflogt schriftlich auf Papierdokumenten,
+welches sehr zeitintensiv und fehleranfällig ist.(Übertragungsfehler...)
 
 === Aufgabenstellung
 Unsere Aufgabe besteht darin ein Programm zu entwickeln, dass das Verwalten von Turnieren einfacher gestaltet, da das Erfassen von Daten auf Papier sehr aufwendig ist und man schnell den Überblick verlieren kann.
