@@ -24,11 +24,8 @@ endif::backend-html5[]
 
 
 === Ausgangssituation
-Unser Projekt ist ein Turnierverwaltungsprogramm , dass das Verwalten von Turnieren vereinfachen soll da die Turnierplanung momentan noch händisch durchgeführt wird. Das Programm kann die verschiedene Arten von Turnieren (z.B. Einzelturnier, Mannschaftsturnier), sowie verschieden Arten von Spielsystemen (KO-System, Gruppen-System) verwalten und man kann zwischen den verschiedenen Sportarten wählen.
-
-Die HTL Leonding ist eine HTL im oö. Zentralraum mit ca. 1000 Schülern und den Fachabteilungen Medientechnik, Informatik, ....
-es gibt turnsal die planung und organisatio erfolgt schriftlich auf papier
-organistaion
+Die HTL Leonding ist eine HTL im oberösterreichischen Zentralraum mit ungefähr 1000 SchülerInnen und den Fachabteilungen Medientechnik, Informatik, Medizintechnik und Elektronik.
+Sowie auch an anderen Schule gibt es hier Turnsäle in denen Tuniere stattfinden bei diesen erfolgt die Organisation derzeit schriftlich auf Papier.
 
 === Istzustand
 Momentan gibt es kein Turnierverwaltungsprogramm das an unserer Schule verwendet wird. Alle Daten werden bisher noch über Papier schriftlich erfasst also es gibt keine automatische Datenerfassung.
