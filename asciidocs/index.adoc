@@ -53,8 +53,7 @@ Unsere Aufgabe besteht darin ein Programm zu entwickeln, dass das Verwalten von 
 - Unser Programm soll die Daten schnell genug verarbeiten um die Ergbenisse der Spiele nicht verzögert anzuzeigen
 
 === Ziele
-Unser Ziel ist die Erstellung eines Programmes welches die Planung,
-Verwaltung und Durchführung diverser Turnierarten und Spielsystemen vereinfacht.
+Die administrative Aufgaben bei der Abwicklung der Schüler Tuniere so minimal wir möglich zu halten.
 
 
 === Mengengerüst
@@ -94,7 +93,7 @@ Unser Programm ist eine Desktop-Application und läuft unabhängig vom Internet 
 
 == Projekthandbuch "Organisatorische Rahmenbedingungen"
 
-=== GANTT-Diagramm
+#=== GANTT-Diagramm#
 
 mit User-Stories (definiert in YouTrack)
 
