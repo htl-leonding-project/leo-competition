@@ -50,4 +50,15 @@ public class Turnier {
     public void setTurniername(String turniername) {
         this.turniername = turniername;
     }
+
+    @Override
+    public String toString() {
+        return "Turnier{" +
+                "turnierid=" + turnierid +
+                ", datum=" + datum +
+                ", uhrzeit=" + uhrzeit +
+                ", turnierart='" + turnierart + '\'' +
+                ", turniername='" + turniername + '\'' +
+                '}';
+    }
 }
