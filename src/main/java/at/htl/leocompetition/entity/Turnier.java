@@ -11,6 +11,17 @@ public class Turnier {
     private String turnierart;
     private String turniername;
 
+    public Turnier(Long turnierid, LocalDate datum, LocalDate uhrzeit, String turnierart, String turniername) {
+        this.turnierid = turnierid;
+        this.datum = datum;
+        this.uhrzeit = uhrzeit;
+        this.turnierart = turnierart;
+        this.turniername = turniername;
+    }
+
+    public Turnier() {
+    }
+
     public Long getTurnierid() {
         return turnierid;
     }
