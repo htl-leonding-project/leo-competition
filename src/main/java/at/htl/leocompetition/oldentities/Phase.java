@@ -1,4 +1,4 @@
-package at.htl.leocompetition.entity;
+package at.htl.leocompetition.oldentities;
 
 import leoturniercore.*;
 

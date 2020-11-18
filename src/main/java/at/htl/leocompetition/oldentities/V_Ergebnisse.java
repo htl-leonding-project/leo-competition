@@ -1,4 +1,4 @@
-package at.htl.leocompetition.entity;
+package at.htl.leocompetition.oldentities;
 
 public class V_Ergebnisse {
     private Spiel spiel;

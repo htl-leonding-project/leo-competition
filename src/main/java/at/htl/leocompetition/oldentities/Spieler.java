@@ -1,4 +1,4 @@
-package at.htl.leocompetition.entity;
+package at.htl.leocompetition.oldentities;
 
 import java.io.Serializable;
 import java.util.Date;
