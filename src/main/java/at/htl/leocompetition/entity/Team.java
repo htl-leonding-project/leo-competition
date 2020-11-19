@@ -1,26 +1,22 @@
 package at.htl.leocompetition.entity;
 
-public class Mannschaft {
+public class Team {
 
     private String teamName;
     private int teamId;
-    private String gameList1;
-    private String getGameList2;
     private String teams;
     private String player;
     private String phase;
 
-    public Mannschaft(String teamName, int teamId, String gameList1, String getGameList2, String teams, String player, String phase) {
+    public Team(String teamName, int teamId, String teams, String player, String phase) {
         this.teamName = teamName;
         this.teamId = teamId;
-        this.gameList1 = gameList1;
-        this.getGameList2 = getGameList2;
         this.teams = teams;
         this.player = player;
         this.phase = phase;
     }
 
-    public Mannschaft() {
+    public Team() {
     }
 
     public String getTeamName() {
@@ -37,22 +33,6 @@ public class Mannschaft {
 
     public void setTeamId(int teamId) {
         this.teamId = teamId;
-    }
-
-    public String getGameList1() {
-        return gameList1;
-    }
-
-    public void setGameList1(String gameList1) {
-        this.gameList1 = gameList1;
-    }
-
-    public String getGetGameList2() {
-        return getGameList2;
-    }
-
-    public void setGetGameList2(String getGameList2) {
-        this.getGameList2 = getGameList2;
     }
 
     public String getTeams() {
@@ -84,8 +64,6 @@ public class Mannschaft {
         return "Mannschaft{" +
                 "teamName='" + teamName + '\'' +
                 ", teamId=" + teamId +
-                ", gameList1='" + gameList1 + '\'' +
-                ", getGameList2='" + getGameList2 + '\'' +
                 ", teams='" + teams + '\'' +
                 ", player='" + player + '\'' +
                 ", phase='" + phase + '\'' +
