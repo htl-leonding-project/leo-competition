@@ -15,14 +15,14 @@ public class InitBean {
 
 
 
-        Team team1AHEL = new Team("1AHEL", 1);
-        Team team1AHIF = new Team("1AHIF", 2);
-        Team team1AHITM = new Team("1AHITM", 3);
-        Team team1AHBG = new Team("1AHBG", 4);
-        Team team1BHEL = new Team("1BHEL", 5);
-        Team team1BHIF = new Team("1BHIF", 6);
-        Team team1BHITM = new Team("1BHITM", 7);
-        Team team1BHBG = new Team("1BHBG", 8);
+        Team team1AHEL = new Team((long) 1,"1AHEL");
+        Team team1AHIF = new Team((long) 2,"1AHIF");
+        Team team1AHITM = new Team((long) 3,"1AHITM");
+        Team team1AHBG = new Team((long) 4,"1AHBG");
+        Team team1BHEL = new Team((long) 5,"1BHEL");
+        Team team1BHIF = new Team((long) 6,"1BHIF");
+        Team team1BHITM = new Team((long) 7,"1BHITM");
+        Team team1BHBG = new Team((long) 8,"1BHBG");
 
 
     }
