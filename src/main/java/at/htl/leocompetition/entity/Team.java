@@ -2,13 +2,13 @@ package at.htl.leocompetition.entity;
 
 public class Team {
 
+    private Long teamId;
     private String teamName;
-    private int teamId;
 
 
-    public Team(String teamName, int teamId) {
-        this.teamName = teamName;
+    public Team(Long teamId,String teamName) {
         this.teamId = teamId;
+        this.teamName = teamName;
     }
 
     public Team() {
@@ -22,11 +22,11 @@ public class Team {
         this.teamName = teamName;
     }
 
-    public int getTeamId() {
+    public Long getTeamId() {
         return teamId;
     }
 
-    public void setTeamId(int teamId) {
+    public void setTeamId(Long teamId) {
         this.teamId = teamId;
     }
 
