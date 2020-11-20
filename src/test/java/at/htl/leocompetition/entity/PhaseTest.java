@@ -18,4 +18,14 @@ public class PhaseTest {
 
         assertThat(phase).isNotNull();
     }
+
+    @Order(20)
+    @Test
+    public void toString_Test(){
+        List<Node> nodeList = new ArrayList<>();
+        Phase phase = new Phase((long) 1,"first Round",nodeList);
+
+        assertThat(phase.toString()).isEqualTo("Phase{phaseId=1, phaseName='first Round'," +
+                " nodeList=[]}");
+    }
 }
