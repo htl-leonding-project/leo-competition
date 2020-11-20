@@ -3,7 +3,8 @@ package at.htl.leocompetition.entity;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -12,7 +13,9 @@ public class PhaseTest {
     @Order(10)
     @Test
     public void createPhase_Test(){
+        List<Node> nodeList = new ArrayList<>();
+        Phase phase = new Phase((long) 1,"first Round",nodeList);
 
+        assertThat(phase).isNotNull();
     }
-
 }
