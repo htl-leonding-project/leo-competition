@@ -1,0 +1,42 @@
+@startuml
+
+class Competition {
+   Long : competitionId
+   LocalDate : date
+}
+
+class Team {
+   Long : teamId
+   String : teamName
+}
+
+class Player {
+   Long : playerId
+   String : name
+}
+
+class Phase {
+   Long : phaseId
+   String : phaseName
+   List<Node> : nodeList
+}
+
+class Node {
+   Node : rightnode
+   Node : leftNode
+   Node : parentNode
+   Team : team1
+   Team : team2
+}
+
+Competition "1" -right-> "*"  Team: has
+Team "1" -right-> "*"  Player: has
+Team "*" -down-> "*"  Phase: has
+Phase "*" -down-> "1"  Competition: has
+Node "*" --> "1"  Node: has
+Node "*" --> "1"  Node: has
+Node "*" --> "1"  Node: has
+Phase "1" -right-> "*"  Node: has
+
+
+@enduml
