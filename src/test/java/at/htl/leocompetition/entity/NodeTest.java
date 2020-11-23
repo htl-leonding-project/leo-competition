@@ -24,8 +24,8 @@ public class NodeTest {
         Team team2 = new Team((long) 1,"1AHIF");
         Node node = new Node((long) 1,null, null,null,team1,team2,null);
 
-        assertThat(node.toString()).isEqualTo("Node{nodeId=1, rightnode=null, " + "leftNode=null, " +
-                "parentNode=null, team1=Team{teamName='1AHITM', teamId=1}, team2=Team{teamName='1AHIF', teamId=1}}"
+        assertThat(node.toString()).isEqualTo("Node{nodeId=1, rightnode=null, leftNode=null, parentNode=null, " +
+                "team1=Team{teamName='1AHITM', teamId=1}, team2=Team{teamName='1AHIF', teamId=1}, phase=null}"
         );
     }
 }
