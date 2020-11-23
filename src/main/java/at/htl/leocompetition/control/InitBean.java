@@ -1,6 +1,7 @@
 package at.htl.leocompetition.control;
 
 
+import at.htl.leocompetition.entity.Competition;
 import at.htl.leocompetition.entity.Node;
 import at.htl.leocompetition.entity.Phase;
 import at.htl.leocompetition.entity.Team;
@@ -13,8 +14,6 @@ public class InitBean {
 
     private void runPrototype() {
 
-
-
         Team team1AHEL = new Team((long) 1,"1AHEL");
         Team team1AHIF = new Team((long) 2,"1AHIF");
         Team team1AHITM = new Team((long) 3,"1AHITM");
@@ -23,6 +22,10 @@ public class InitBean {
         Team team1BHIF = new Team((long) 6,"1BHIF");
         Team team1BHITM = new Team((long) 7,"1BHITM");
         Team team1BHBG = new Team((long) 8,"1BHBG");
+
+        Competition competition = new Competition();
+
+
 
 
     }

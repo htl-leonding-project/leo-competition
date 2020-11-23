@@ -4,6 +4,7 @@ public class Team {
 
     private Long teamId;
     private String teamName;
+    private Competition competition;
 
 
     public Team(Long teamId,String teamName) {

@@ -9,11 +9,13 @@ public class Phase {
     private Long phaseId;
     private String phaseName;
     private List<Node> nodeList = new ArrayList<>();
+    private Competition competition;
 
-    public Phase(Long phaseId, String phaseName, List<Node> nodeList) {
+    public Phase(Long phaseId, String phaseName, List<Node> nodeList, Competition competition) {
         this.phaseId = phaseId;
         this.phaseName = phaseName;
         this.nodeList = nodeList;
+        this.competition = competition;
     }
 
     public Phase() {
@@ -43,12 +45,22 @@ public class Phase {
         this.nodeList = nodeList;
     }
 
+
+    public Competition getCompetition() {
+        return competition;
+    }
+
+    public void setCompetition(Competition competition) {
+        this.competition = competition;
+    }
+
     @Override
     public String toString() {
         return "Phase{" +
                 "phaseId=" + phaseId +
                 ", phaseName='" + phaseName + '\'' +
                 ", nodeList=" + nodeList +
+                ", competition=" + competition +
                 '}';
     }
 }

@@ -8,17 +8,21 @@ class Competition {
 class Team {
    Long : teamId
    String : teamName
+   Competition : competition
 }
 
 class Player {
    Long : playerId
    String : name
+   Team : team
 }
 
 class Phase {
    Long : phaseId
    String : phaseName
    List<Node> : nodeList
+   Competition : competition
+
 }
 
 class Node {
@@ -27,7 +31,19 @@ class Node {
    Node : parentNode
    Team : team1
    Team : team2
+   Phase : phase
 }
+
+class Match {
+    Long : matchid
+    Team : team1
+    Team : team2
+    int : pointsTeam1
+    int : pointsTeam2
+
+}
+
+
 
 Competition "1" -right-> "*"  Team: has
 Team "1" -right-> "*"  Player: has
@@ -37,6 +53,7 @@ Node "*" --> "1"  Node: has
 Node "*" --> "1"  Node: has
 Node "*" --> "1"  Node: has
 Phase "1" -right-> "*"  Node: has
+Phase "1" -left> "*" Match
 
 
 @enduml
