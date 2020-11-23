@@ -12,7 +12,8 @@ public class PlayerTest {
     @Test
     public void createPlayer_Test() {
 
-        Player player = new Player((long) 1, "Kelly Tran");
+        Team team = new Team((long) 1,"team1");
+        Player player = new Player((long) 1, "Kelly Tran", team);
 
         assertThat(player).isNotNull();
     }
@@ -20,9 +21,10 @@ public class PlayerTest {
     @Order(10)
     @Test
     public void toString_Test() {
-        Player player = new Player((long) 1, "Kelly Tran");
+        Team team = new Team((long) 1,"team1");
+        Player player = new Player((long) 1, "Kelly Tran",team);
 
         System.out.println(player);
-        assertThat(player.toString()).isEqualTo("Player{playerId=1, name='Kelly Tran'}");
+        assertThat(player.toString()).isEqualTo("Player{playerId=1, name='Kelly Tran', team=Team{teamName='team1', teamId=1}}");
     }
 }
