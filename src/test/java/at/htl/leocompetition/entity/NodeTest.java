@@ -18,14 +18,14 @@ public class NodeTest {
         Competition competition = new Competition((long) 1,date);
 
         ArrayList<Node> nodelist = new ArrayList<>();
-        Team team1 = new Team((long) 1,"1AHITM");
-        Team team2 = new Team((long) 1, "1AHIF");
+        Team team1 = new Team((long) 1,"1AHITM", competition);
+        Team team2 = new Team((long) 1, "1AHIF", competition);
         Phase phase = new Phase((long)1, "Phase1", nodelist,competition);
 
         Match match = new Match((long) 1, team1, team2, 1, 1, phase);
 
 
-        Node node = new Node((long) 1,null, null,null,match,phase;
+        Node node = new Node((long) 1,null, null,null,match,phase);
 
         assertThat(node).isNotNull();
     }
@@ -38,14 +38,14 @@ public class NodeTest {
         Competition competition = new Competition((long) 1,date);
 
         ArrayList<Node> nodelist = new ArrayList<>();
-        Team team1 = new Team((long) 1,"1AHITM");
-        Team team2 = new Team((long) 1, "1AHIF");
+        Team team1 = new Team((long) 1,"1AHITM",competition);
+        Team team2 = new Team((long) 1, "1AHIF", competition);
         Phase phase = new Phase((long)1, "Phase1", nodelist,competition);
 
         Match match = new Match((long) 1, team1, team2, 1, 1, phase);
 
 
-        Node node = new Node((long) 1,null, null,null,match,phase;
+        Node node = new Node((long) 1,null, null,null,match,phase);
 
         assertThat(node.toString()).isEqualTo("Node{nodeId=1, rightnode=null, leftNode=null, parentNode=null, " +
                 "team1=Team{teamName='1AHITM', teamId=1}, team2=Team{teamName='1AHIF', teamId=1}, phase=null}"

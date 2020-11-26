@@ -12,7 +12,11 @@ public class PlayerTest {
     @Test
     public void createPlayer_Test() {
 
-        Team team = new Team((long) 1,"team1");
+        LocalDate date = LocalDate.parse("2017-12-15");
+
+        Competition competition = new Competition((long) 1,date);
+
+        Team team = new Team((long) 1,"team1", competition);
         Player player = new Player((long) 1, "Kelly Tran", team);
 
         assertThat(player).isNotNull();
@@ -21,7 +25,12 @@ public class PlayerTest {
     @Order(10)
     @Test
     public void toString_Test() {
-        Team team = new Team((long) 1,"team1");
+
+        LocalDate date = LocalDate.parse("2017-12-15");
+
+        Competition competition = new Competition((long) 1,date);
+
+        Team team = new Team((long) 1,"team1", competition);
         Player player = new Player((long) 1, "Kelly Tran",team);
 
         System.out.println(player);
