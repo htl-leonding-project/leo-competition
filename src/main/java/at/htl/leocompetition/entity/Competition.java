@@ -8,7 +8,7 @@ public class Competition {
     private LocalDate date;
 
 
-    public Competition(Long competitionId, LocalDate datum) {
+    public Competition(Long competitionId, LocalDate date) {
         this.competitionId = competitionId;
         this.date = date ;
 
