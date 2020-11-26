@@ -26,6 +26,7 @@ class Phase {
 }
 
 class Node {
+   Long: nodeId
    Node : rightnode
    Node : leftNode
    Node : parentNode
