@@ -15,7 +15,6 @@ public class InitBean {
     }
 
     private void runPrototype() {
-
         LocalDate date = LocalDate.parse("2017-12-15");
 
         Team team1AHEL = new Team((long) 1,"1AHEL",new Competition((long) 1,date));
