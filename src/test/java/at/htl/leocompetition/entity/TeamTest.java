@@ -3,6 +3,7 @@ package at.htl.leocompetition.entity;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,9 @@ public class TeamTest {
     @Order(10)
     @Test
     public void createTeam_Test(){
-        Team team = new Team((long) 1,"team1");
+        LocalDate date = LocalDate.parse("2017-12-15");
+        Competition competition = new Competition((long) 1,date);
+        Team team = new Team((long) 1,"team1",competition);
 
         assertThat(team).isNotNull();
     }
@@ -21,9 +24,10 @@ public class TeamTest {
     @Order(20)
     @Test
     public void toString_Test(){
-        Team team = new Team((long) 1,"team1");
+        LocalDate date = LocalDate.parse("2017-12-15");
+        Competition competition = new Competition((long) 1,date);
+        Team team = new Team((long) 1,"team1",competition);
 
-        System.out.println(team);
-        assertThat(team.toString()).isEqualTo("Team{teamName='team1', teamId=1}");
+        assertThat(team.toString()).isEqualTo("Team{teamId=1, teamName='team1', competition=Competition{competitionId=1, date=null}}");
     }
 }
