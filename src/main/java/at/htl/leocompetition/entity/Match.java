@@ -7,22 +7,26 @@ public class Match {
     private Team team2;
     private int pointsTeam1;
     private int pointsTeam2;
+    private Phase phase;
 
     public Match() {
     }
 
-    public Match(Long matchId, Team team1, Team team2) {
-        this.matchId = matchId;
-        this.team1 = team1;
-        this.team2 = team2;
-    }
-
-    public Match(Long matchId, Team team1, Team team2, int pointsTeam1, int pointsTeam2) {
+    public Match(Long matchId, Team team1, Team team2, int pointsTeam1, int pointsTeam2, Phase phase) {
         this.matchId = matchId;
         this.team1 = team1;
         this.team2 = team2;
         this.pointsTeam1 = pointsTeam1;
         this.pointsTeam2 = pointsTeam2;
+        this.phase = phase;
+    }
+
+    public Phase getPhase() {
+        return phase;
+    }
+
+    public void setPhase(Phase phase) {
+        this.phase = phase;
     }
 
     public Long getMatchId() {
@@ -81,6 +85,7 @@ public class Match {
                 ", team2=" + team2 +
                 ", pointsTeam1=" + pointsTeam1 +
                 ", pointsTeam2=" + pointsTeam2 +
+                ", phase=" + phase +
                 '}';
     }
 }
