@@ -3,9 +3,9 @@ package at.htl.leocompetition.entity;
 import java.util.Date;
 
 public class Player {
-    private Long playerId;
-    private String name;
-    private Team team;
+    Long playerId;
+    String name;
+    Team team;
 
     public Player() {
     }

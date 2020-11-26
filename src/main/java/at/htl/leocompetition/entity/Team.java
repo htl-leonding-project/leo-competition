@@ -2,9 +2,9 @@ package at.htl.leocompetition.entity;
 
 public class Team {
 
-    private Long teamId;
-    private String teamName;
-    private Competition competition;
+    Long teamId;
+    String teamName;
+    Competition competition;
 
 
     public Team(Long teamId, String teamName, Competition competition) {
@@ -39,10 +39,6 @@ public class Team {
 
     @Override
     public String toString() {
-        return "Team{" +
-                "teamId=" + teamId +
-                ", teamName='" + teamName + '\'' +
-                ", competition=" + competition +
-                '}';
+        return "Team '" + teamName + "'";
     }
 }
