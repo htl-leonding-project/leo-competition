@@ -25,7 +25,7 @@ public class NodeTest {
         Match match = new Match((long) 1, team1, team2, 1, 1, phase);
 
 
-        Node node = new Node((long) 1,null, null,null,match,phase;
+        Node node = new Node((long) 1,null, null,null,match,phase);
 
         assertThat(node).isNotNull();
     }
