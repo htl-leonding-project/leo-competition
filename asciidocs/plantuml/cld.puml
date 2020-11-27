@@ -18,11 +18,10 @@ class Player {
 }
 
 class Phase {
-   Long : phaseId
    String : phaseName
-   List<Node> : nodeList
+   String : description
+   Set<Node> : nodes
    Competition : competition
-
 }
 
 class Node {
@@ -45,18 +44,15 @@ class Match {
     Phase : phase
 }
 
-
-
 Competition "1" -right-> "*"  Team: has
 Team "1" -right-> "*"  Player: has
-Team "*" -down-> "*"  Phase: has
+Team "*" -up-> "*"  Phase: has
 Phase "*" -down-> "1"  Competition: has
 Node "*" --> "1"  Node: has
 Node "*" --> "1"  Node: has
 Node "*" --> "1"  Node: has
 Phase "1" -right-> "*"  Node: has
 Phase "1" -left> "*" Match
-Node "*" -right> "1" Match
-
+Node "*" -left> "1" Match
 
 @enduml
