@@ -38,7 +38,6 @@ public class Prototyp {
          * Runde 1
          * 4 Nodes werden zugeordnet mit je einem Match und je 2 Teams
          */
-
         Phase round1 = phases.get(1);
         Match match1 = new Match(afel3,chdv3, round1);
         Match match2 = new Match(ahdv1,dhdv1, round1);
@@ -55,7 +54,6 @@ public class Prototyp {
         round1.addNode(node4);
 
         // Erstellen einer Datenstruktur für die Phase 2
-
         Phase round2 = phases.get(2);
         Match match5 = new Match(afel3,dhdv1, round2);
         Match match6 = new Match(bhdv1,ahel1, round2);
@@ -66,6 +64,11 @@ public class Prototyp {
         round2.addNode(node6);
 
         // Erstellen einer Datenstruktur für die Phase 3
+        Phase round3 = phases.get(3);
+        Match match7 = new Match(afel3,ahel1, round3);
+        Node node7 = new Node(match7, round3);
+
+        round3.addNode(node7);
 
         // Erstellen einer Datenstruktur für die Phase 4
 
