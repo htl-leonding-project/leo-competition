@@ -71,8 +71,11 @@ public class Prototyp {
         round3.addNode(node7);
 
         // Erstellen einer Datenstruktur für die Phase 4
+        Phase round4 = phases.get(4);
+        Match match8 = new Match(dhdv1,bhdv1, round4);
+        Node node8 = new Node(match8, round4);
 
-
+        round4.addNode(node8);
 
         System.out.println("Finished");
 
