@@ -56,6 +56,15 @@ public class Prototyp {
 
         // Erstellen einer Datenstruktur für die Phase 2
 
+        Phase round2 = phases.get(2);
+        Match match5 = new Match(afel3,dhdv1, round2);
+        Match match6 = new Match(bhdv1,ahel1, round2);
+        Node node5 = new Node(match5, round2);
+        Node node6 = new Node(match6, round2);
+
+        round2.addNode(node5);
+        round2.addNode(node6);
+
         // Erstellen einer Datenstruktur für die Phase 3
 
         // Erstellen einer Datenstruktur für die Phase 4
