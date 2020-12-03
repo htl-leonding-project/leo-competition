@@ -26,6 +26,18 @@ public class Node {
     public Node() {
     }
 
+    public Node(Long nodeId, Node parentNode, Match match, Phase phase) {
+        this.nodeId = nodeId;
+        this.parentNode = parentNode;
+        this.match = match;
+        this.phase = phase;
+    }
+
+    public Node(Node rightnode, Node leftNode) {
+        this.rightnode = rightnode;
+        this.leftNode = leftNode;
+    }
+
 
     @Override
     public String toString() {

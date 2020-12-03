@@ -34,6 +34,8 @@ public class Prototyp {
         phases.put(4, new Phase("Round 4", competition));
         phases.get(4).description = "Play for third and fourth place";
 
+
+
         /**
          * Runde 1
          * 4 Nodes werden zugeordnet mit je einem Match und je 2 Teams
@@ -44,6 +46,7 @@ public class Prototyp {
         Match match3 = new Match(bhdv1,chdvm4, round1);
         Match match4 = new Match(bhdv3,ahel1, round1);
         Node node1 = new Node(match1, round1);
+
         Node node2 = new Node(match2, round1);
         Node node3 = new Node(match3, round1);
         Node node4 = new Node(match4, round1);
@@ -58,7 +61,16 @@ public class Prototyp {
         Match match5 = new Match(afel3,dhdv1, round2);
         Match match6 = new Match(bhdv1,ahel1, round2);
         Node node5 = new Node(match5, round2);
+        node1.parentNode = node5;
+        node2.parentNode = node5;
+        node5.leftNode = node1;
+        node5.rightnode = node2;
+
         Node node6 = new Node(match6, round2);
+        node3.parentNode = node6;
+        node4.parentNode = node6;
+        node6.leftNode = node3;
+        node6.leftNode = node4;
 
         round2.addNode(node5);
         round2.addNode(node6);
@@ -67,6 +79,11 @@ public class Prototyp {
         Phase round3 = phases.get(3);
         Match match7 = new Match(afel3,ahel1, round3);
         Node node7 = new Node(match7, round3);
+
+        node5.parentNode = node7;
+        node6.parentNode = node7;
+        node7.leftNode = node5;
+        node7.rightnode = node6;
 
         round3.addNode(node7);
 
