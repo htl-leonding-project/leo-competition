@@ -1,16 +1,13 @@
 package at.htl.leocompetition.entity;
 
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Phase {
 
     String phaseName;
     String description;
-    Set<Node> nodes = new HashSet<>();
+    List<Node> nodes = new LinkedList<>();
     Competition competition;
 
     public Phase(String phaseName, Competition competition) {
@@ -26,6 +23,16 @@ public class Phase {
         node.phase = this;  // weil bidirektionale Assoziation
     }
 
+    public Node get(int index) {
+        if (index < this.size()) {
+            return nodes.get(index);
+        }
+        throw new IndexOutOfBoundsException("Node-index in phase out of bound");
+    }
+
+    public int size() {
+        return nodes.size();
+    }
 
     @Override
     public String toString() {

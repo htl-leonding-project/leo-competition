@@ -39,6 +39,54 @@ public class Node {
     }
 
 
+    public Long getNodeId() {
+        return nodeId;
+    }
+
+    public void setNodeId(Long nodeId) {
+        this.nodeId = nodeId;
+    }
+
+    public Node getRightnode() {
+        return rightnode;
+    }
+
+    public void setRightnode(Node rightnode) {
+        this.rightnode = rightnode;
+    }
+
+    public Node getLeftNode() {
+        return leftNode;
+    }
+
+    public void setLeftNode(Node leftNode) {
+        this.leftNode = leftNode;
+    }
+
+    public Node getParentNode() {
+        return parentNode;
+    }
+
+    public void setParentNode(Node parentNode) {
+        this.parentNode = parentNode;
+    }
+
+    public Match getMatch() {
+        return match;
+    }
+
+    public void setMatch(Match match) {
+        this.match = match;
+    }
+
+    public Phase getPhase() {
+        return phase;
+    }
+
+    public void setPhase(Phase phase) {
+        this.phase = phase;
+    }
+
     @Override
     public String toString() {
         return "Node: " + match.toString();

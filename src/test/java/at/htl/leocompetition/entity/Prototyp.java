@@ -1,9 +1,11 @@
 package at.htl.leocompetition.entity;
 
+import org.codehaus.groovy.control.Phases;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Prototyp {
@@ -11,8 +13,13 @@ public class Prototyp {
     @Test
     void create_and_execute_a_KO_Competition() {
 
+        createKoTree();
+
+    }
+
+    public Map<Integer, Phase> createKoTree() {
         // Create a Competition
-        LocalDate date = LocalDate.parse("2020-11-26");
+        LocalDate date = LocalDate.now();
         Competition competition = new Competition((long) 1, date);
 
         // Create all teams
@@ -96,7 +103,7 @@ public class Prototyp {
 
         System.out.println("Finished");
 
+        return phases;
     }
-
 
 }
