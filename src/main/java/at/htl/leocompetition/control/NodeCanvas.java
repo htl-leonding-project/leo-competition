@@ -29,7 +29,7 @@ public class NodeCanvas {
 
         // draw nodes
         Node n = phases.get(1).get(1);
-        field = drawNode(n, 5, 5, field);
+        field = drawNode(n, 2, 2, field);
 
         n = phases.get(1).get(2);
         field = drawNode(n, 20, 20, field);
@@ -37,12 +37,14 @@ public class NodeCanvas {
         n = phases.get(1).get(3);
         field = drawNode(n, 15, 30, field);
 
+        // draw lines
+
     }
 
 
     public void printCanvasToFile() {
         // Create a BufferedOutputStream by wrapping a FileOutputStream
-        try (OutputStream outputStream = Files.newOutputStream(Paths.get("demo.puml"));
+        try (OutputStream outputStream = Files.newOutputStream(Paths.get("demo.txt"));
              BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(outputStream)) {
 
             for (int y = 0; y < 100; y++) {
@@ -61,12 +63,15 @@ public class NodeCanvas {
 
         int maxLineLength = 0;
 
+        // Hole die Daten aus den Match- und Team-Objekten und erstelle die zu auszugebende Zeile
+        // Aber noch ohne rechten Rahmen, da wir noch nicht wissen, wie bereit der Knoten wird
         String[] lines = new String[4];
         lines[0] = String.format("\u2551 Team 1: %s", node.getMatch().getTeam1().getTeamName());
         lines[1] = String.format("\u2551 Team 2: %s", node.getMatch().getTeam2().getTeamName());
         lines[2] = String.format("\u2551 Score 1: %d", node.getMatch().getPointsTeam1());
         lines[3] = String.format("\u2551 Score 2: %d", node.getMatch().getPointsTeam2());
 
+        // Bestimme die längste Zeile und somit die Position für den rechten Rahmen
         for (String line : lines) {
             maxLineLength = Math.max(maxLineLength, line.length());
         }

@@ -2,12 +2,12 @@ package at.htl.leocompetition.entity;
 
 public class Match {
 
-    Long matchId;
-    Team team1;
-    Team team2;
-    int pointsTeam1;
-    int pointsTeam2;
-    Phase phase;
+    private Long matchId;
+    private Team team1;
+    private Team team2;
+    private int pointsTeam1;
+    private int pointsTeam2;
+    private Phase phase;
 
     public Match() {
     }
