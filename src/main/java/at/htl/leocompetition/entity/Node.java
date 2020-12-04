@@ -1,13 +1,14 @@
 package at.htl.leocompetition.entity;
 
 public class Node {
-    private Long nodeId;
-    private Node rightnode;
-    private Node leftNode;
-    private Node parentNode;
-    private Match match;
-    private Phase phase;
+    Long nodeId; // für den Prototypen braucht man noch keine Id
+    Node rightnode;
+    Node leftNode;
+    Node parentNode;
+    Match match;
+    Phase phase;
 
+    // dieser Konstruktor ist sinnlos
     public Node(Long nodeId, Node rightnode, Node leftNode, Node parentNode, Match match, Phase phase) {
         this.nodeId = nodeId;
         this.rightnode = rightnode;
@@ -17,8 +18,26 @@ public class Node {
         this.phase = phase;
     }
 
+    public Node(Match match, Phase phase) {
+        this.match = match;
+        this.phase = phase;
+    }
+
     public Node() {
     }
+
+    public Node(Long nodeId, Node parentNode, Match match, Phase phase) {
+        this.nodeId = nodeId;
+        this.parentNode = parentNode;
+        this.match = match;
+        this.phase = phase;
+    }
+
+    public Node(Node rightnode, Node leftNode) {
+        this.rightnode = rightnode;
+        this.leftNode = leftNode;
+    }
+
 
     public Long getNodeId() {
         return nodeId;
@@ -52,15 +71,24 @@ public class Node {
         this.parentNode = parentNode;
     }
 
+    public Match getMatch() {
+        return match;
+    }
+
+    public void setMatch(Match match) {
+        this.match = match;
+    }
+
+    public Phase getPhase() {
+        return phase;
+    }
+
+    public void setPhase(Phase phase) {
+        this.phase = phase;
+    }
+
     @Override
     public String toString() {
-        return "Node{" +
-                "nodeId=" + nodeId +
-                ", rightnode=" + rightnode +
-                ", leftNode=" + leftNode +
-                ", parentNode=" + parentNode +
-                ", match=" + match +
-                ", phase=" + phase +
-                '}';
+        return "Node: " + match.toString();
     }
 }

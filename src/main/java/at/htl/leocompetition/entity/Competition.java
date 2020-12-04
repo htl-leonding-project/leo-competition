@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public class Competition {
 
-    private Long competitionId;
-    private LocalDate date;
+    Long competitionId;
+    LocalDate date;
 
 
     public Competition(Long competitionId, LocalDate date) {

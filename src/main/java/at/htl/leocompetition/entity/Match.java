@@ -2,16 +2,25 @@ package at.htl.leocompetition.entity;
 
 public class Match {
 
-    private Long matchId;
-    private Team team1;
-    private Team team2;
-    private int pointsTeam1;
-    private int pointsTeam2;
-    private Phase phase;
+    Long matchId;
+    Team team1;
+    Team team2;
+    int pointsTeam1;
+    int pointsTeam2;
+    Phase phase;
 
     public Match() {
     }
 
+    public Match(Team team1, Team team2, Phase phase) {
+        this.team1 = team1;
+        this.team2 = team2;
+        this.phase = phase;
+    }
+
+    // dieser Konstruktor ist sinnlos
+    // 1. wird die Id von der DB vergeben
+    // 2. kenne ich die Ergebnisse noch nicht (points)
     public Match(Long matchId, Team team1, Team team2, int pointsTeam1, int pointsTeam2, Phase phase) {
         this.matchId = matchId;
         this.team1 = team1;
@@ -79,13 +88,8 @@ public class Match {
 
     @Override
     public String toString() {
-        return "Match{" +
-                "matchId=" + matchId +
-                ", team1=" + team1 +
-                ", team2=" + team2 +
-                ", pointsTeam1=" + pointsTeam1 +
-                ", pointsTeam2=" + pointsTeam2 +
-                ", phase=" + phase +
-                '}';
+        return "Match (" + team1 + " - " + team2 + ")";
+
+
     }
 }

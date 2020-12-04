@@ -1,66 +1,41 @@
 package at.htl.leocompetition.entity;
 
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Phase {
 
-    private Long phaseId;
-    private String phaseName;
-    private List<Node> nodeList = new ArrayList<>();
-    private Competition competition;
+    String phaseName;
+    String description;
+    List<Node> nodes = new LinkedList<>();
+    Competition competition;
 
-    public Phase(Long phaseId, String phaseName, List<Node> nodeList, Competition competition) {
-        this.phaseId = phaseId;
+    public Phase(String phaseName, Competition competition) {
         this.phaseName = phaseName;
-        this.nodeList = nodeList;
         this.competition = competition;
     }
 
     public Phase() {
     }
 
-    public Long getPhaseId() {
-        return phaseId;
+    public void addNode(Node node) {
+        nodes.add(node);
+        node.phase = this;  // weil bidirektionale Assoziation
     }
 
-    public void setPhaseId(Long phaseId) {
-        this.phaseId = phaseId;
+    public Node get(int index) {
+        if (index < this.size()) {
+            return nodes.get(index);
+        }
+        throw new IndexOutOfBoundsException("Node-index in phase out of bound");
     }
 
-    public String getPhaseName() {
-        return phaseName;
-    }
-
-    public void setPhaseName(String phaseName) {
-        this.phaseName = phaseName;
-    }
-
-    public List<Node> getNodeList() {
-        return nodeList;
-    }
-
-    public void setNodeList(List<Node> nodeList) {
-        this.nodeList = nodeList;
-    }
-
-
-    public Competition getCompetition() {
-        return competition;
-    }
-
-    public void setCompetition(Competition competition) {
-        this.competition = competition;
+    public int size() {
+        return nodes.size();
     }
 
     @Override
     public String toString() {
-        return "Phase{" +
-                "phaseId=" + phaseId +
-                ", phaseName='" + phaseName + '\'' +
-                ", nodeList=" + nodeList +
-                ", competition=" + competition +
-                '}';
+        return phaseName;
     }
 }
