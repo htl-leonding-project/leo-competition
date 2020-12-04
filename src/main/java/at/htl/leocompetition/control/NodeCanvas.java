@@ -27,18 +27,23 @@ public class NodeCanvas {
             field[i].append("\n");
         }
 
-        // draw nodes
-        Node n = phases.get(1).get(1);
-        field = drawNode(n, 2, 2, field);
+//        // draw nodes
+//        Node n = phases.get(1).get(1);
+//        field = drawNode(n, 2, 2, field);
+//
+//        n = phases.get(1).get(2);
+//        field = drawNode(n, 20, 20, field);
+//
+//        n = phases.get(1).get(3);
+//        field = drawNode(n, 15, 30, field);
+//
+//        // draw lines
 
-        n = phases.get(1).get(2);
-        field = drawNode(n, 20, 20, field);
 
-        n = phases.get(1).get(3);
-        field = drawNode(n, 15, 30, field);
-
-        // draw lines
-
+        for (int i = 0; i < phases.get(1).size() ; i++) {
+            Node n = phases.get(1).get(i);
+            field = drawNode(n, 0, i * 7, field);
+        }
     }
 
 
