@@ -44,7 +44,33 @@ public class NodeCanvas {
             Node n = phases.get(1).get(i);
             field = drawNode(n, 0, i * 7, field);
         }
+        int counter = 0;
+        for (int i = 0; i < phases.get(2).size() ; i++) {
+            Node n = phases.get(2).get(i);
+
+            if(counter == 0){
+                field = drawNode(n, 20, 3, field);
+                counter++;
+            }else{
+
+                field = drawNode(n, 20, i * 17, field);
+            }
+        }
+        counter = 0;
+        for (int i = 0; i < phases.get(3).size() ; i++) {
+            Node n = phases.get(3).get(i);
+
+            if(counter == 0){
+                field = drawNode(n, 40, 10, field);
+                counter++;
+            }else{
+
+                field = drawNode(n, 40, i * 30, field);
+            }
+        }
     }
+
+
 
 
     public void printCanvasToFile() {
@@ -90,21 +116,25 @@ public class NodeCanvas {
         field[y + 5].insert(x, "\u255A");
 
         // Eintragen der hinteren Umrandung
-        for (int i = 0; i < lines.length; i++) {
-            field[y + 1 + i].insert(x + maxLineLength + 1, '\u2551');
+        for (int i = 0; i < 2; i++) {
+            field[y + 1 + i].insert(x + 17 , '\u2551');
         }
+        field[y + 1 + 2].insert(x + 17 , '\u255F');
 
+        for (int i = 3; i < lines.length; i++) {
+            field[y + 1 + i].insert(x + 17, '\u2551');
+        }
         // Eintragen der oberen Umrandung
-        for (int i = 0; i < maxLineLength; i++) {
+        for (int i = 0; i < 16; i++) {
             field[y].insert(x + i + 1, '\u2550');
         }
-        field[y].insert(x + maxLineLength + 1, '\u2557');
+        field[y].insert(x + 16 + 1, '\u2557');
 
         // Eintragen der unteren Umrandung
-        for (int i = 0; i < maxLineLength; i++) {
+        for (int i = 0; i < 16; i++) {
             field[y + 5].insert(x + i + 1, '\u2550');
         }
-        field[y + 5].insert(x + maxLineLength + 1, '\u255D');
+        field[y + 5].insert(x + 16 + 1, '\u255D');
 
 
         return field;
